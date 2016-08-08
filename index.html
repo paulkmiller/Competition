@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <header>
         <img src="img/icons/competition.jpg" class="hero">
         <h1>The Competition</h1>
@@ -26,7 +27,7 @@
             <div class="section-content">
                 <h3>Tech</h3>
                 <ul class="bullets">
-                    <li>Sources data primarily from Craigslist, packages it—and data from other services—into an attractive format</li>
+                    <li>Sources data primarily from Craigslist, packages it—and data from other services—into an attractive format <span> Can sometimes list properties that don't actually exist; their sanitation & verification leaves much to be desired</span></li>
                     <li>Gets data from big management companies as well as individual landlords looking to list spare bedrooms</li>
                     <li>Built using nothing more than Bootstrap and jQuery + Google Maps</li>
                 </ul>
@@ -56,12 +57,15 @@
                 <ul class="bullets">
                     <li>Interface is uncomplicated, smooth, and fast</li>
                     <li>Provides helpful guides to help renters make informed choices</li>
+                    <li>Properties in list-view highlight corresponding map icon & visa versa</li>
+                    <li>Organization of information is visually appealing and easy to digest</li>
                 </ul>
                 <h3>Special</h3>
                 <ul class="bullets">
                     <li>Specific maps for low-incoming housing or foreclosures</li>
                     <li>Allows users to contact properties and landlords right through the search map, while highlighting information like rental prices, photos ( including floorpans ), and more information once you click on a map marker ( property ). This
                         is a very information dense website and packages it cleanly</li>
+                    <li>Lists a properties' corresponding school zones, along with associated primary / middle / highschool based on property location</li>
                 </ul>
             </div>
         </section>
@@ -81,6 +85,8 @@
                 <ul class="bullets">
                     <li>Organizes listings into clusters instead of inundating the map with a ton of markers; a smart idea toward keeping # of assets on the DOM at a minimum</li>
                     <li>Two kinds of markers— red & blue. Red represents listings that have been posted in the past few hours</li>
+                    <li>Geo-locator within search bar as clickable icon to automatically filter properties within present location</li>
+                    <li>"Help & Feedback" redirects to a "Contact Support" window along with FAQ section to read while waiting <span> Would be useful to have FAQ information regarding income/credit/housing voucher/section 8 information</li>
                 </ul>
                 <h3>Special</h3>
                 <ul class="bullets">
@@ -99,9 +105,15 @@
                     <li>Offers immaculate 3D tours of listings with a combination of Photographs taken at various points within the listing and WebGL to model the area in the browser</li>
                     <li>Uses Bootstrap, jQuery, Google Maps, WebGL</li>
                     <li>Can easily and quickly add a listing with or without a user account</li>
+                    <li>User accounts allow users to save favorite listings, search queries, but not share</li>
+                    <li>Viewing listing-specific page includes virtually every ounce of information Apartments.com could find on the lsiting itself, including relative locations of schools, restaurants, grocery stores, banks, and other local commodoties</li>
                 </ul>
                 <h3>Design</h3>
                 <ul class="bullets">
+                    <li>Every listing includes floorplans-- crucial information for a user</li>
+                    <li>In event of a search yieling no results, instead of suggesting more "similar" options, they simply tell you there's nothing that meets the criteria. It seems obvious, but we currently suggest alternatives, which has led to many occaisions where Users have been left frustrated and confused. This blunt method may save us more headache going forward.</li>
+                    <li>Strong and consistent use of omnibox in lieu of dropdowns, something to look at closely since our current User-base is consistently using our support channel to ask questions regarding our filters ( drop-downs )</li>
+                    <li>Listings including scheduling availability - small but useful service</li>
                     <li>Average apartment search website with clean UI, though based on poor choices. Obviously not designed for mobile</li>
                 </ul>
                 <h3>Special</h3>
@@ -117,13 +129,56 @@
             <div class="section-content">
                 <h3>Design</h3>
                 <ul class="bullets">
+                    <li>Right-hand list-view is an elegant display of information in stark contrast to Apartments.com which makes every effort to make everything on screen important. Further information can be accessed once clicked on specific listing</li>
+                    <li>Displays school zones within searched address as a standard piece of information for every search ( with detailed school statistics )</li>
+                    <li>Heavy use of omni-box with few options that require dropdowns that yield more specific results than Apartments.com</li>
                     <li>Redfin specific agents to do tours for a quick guide to the listing and the community; spark-notes for home searching</li>
                 </ul>
                 <h3>Tech</h3>
                 <ul class="bullets">
+                    <li>"Download All" feature; seemingly broken presently. Pressing button downloads an excel spreadsheet devoid of housing information but with titles like "Price”, “Address”, “Beds”, “Baths”. If the excel output could be done correclty, this could be a huge and easy service to provide, as many people still like to have paper-in-hand when looking at new properties</li>
                     <li>Can contact leasing agent directly through Redfin</li>
                     <li>Toll-free # to call for assistance + additional info ( Twillio )</li>
                     <li>Uses React, Webpack, and Node.js ( catch-22; everything, including large images, loads quickly but reacts very poorly when scrolling quickly )</li>
+                </ul>
+                <h3>Special</h3>
+                <ul class="bullets">
+                    <li>Almost all of the above features</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="content">
+        <section id="googleMaps" class="toggleable closed">
+            <h2><strong><a href="https://www.apartmentshowcase.com/">ApartmentShowcase</a></strong></h2>
+            <div class="section-content">
+                <h3>Design</h3>
+                <ul class="bullets">
+                  <li>Purple markers for deals; deals page not kept up-to-date</li>
+                </ul>
+                <h3>Tech</h3>
+                <ul class="bullets">
+                  <li></li>
+                </ul>
+                <h3>Special</h3>
+                <ul class="bullets">
+                  <li>Only site to offer a "compare" function: select multiple properties and compare / contrast. Currently doesn't work; should be used and functional for rebuild.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="content">
+        <section id="googleMaps" class="toggleable closed">
+            <h2><strong><a href="https://www.newhomesguide.com/">New Homes Guide</a></strong></h2>
+            <div class="section-content">
+                <h3>Design</h3>
+                <ul class="bullets">
+                  <li>Dated & cluttered</li>
+                  <li>Photos for a builder are on spearate inaccessible pages from the builds detail page</li>
+                </ul>
+                <h3>Tech</h3>
+                <ul class="bullets">
+                  <li>Map view not fully functional</li>
                 </ul>
                 <h3>Special</h3>
                 <ul class="bullets">
